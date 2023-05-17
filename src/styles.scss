@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('../src/assets/fonts/Poppins-Black.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background-color: #141D2F;
+    color: #FFFFFF;
+    background-image: url('../src/assets/img/about_me/Red\ 1\ AM.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10%;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 100px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
