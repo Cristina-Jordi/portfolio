@@ -1,3 +1,10 @@
+// Begin I Am Section
+
+@font-face {
+    font-family: 'Allison Script';
+    src: url('../../assets/fonts/Allison_Script.otf') format('opentype');
+}
+
 .vector-container {
     position: relative;
     display: flex;
@@ -23,6 +30,7 @@
 }
 
 .portrait-container {
+    position: relative;
 
     .portrait-img {
         width: 25vw;
@@ -67,3 +75,114 @@
     top: 20%;
     left: 0;
 }
+
+// End I Am Section
+
+// Begin Reference Icons Line Section
+
+.social-media-container {
+    position: absolute;
+    width: 50%;
+    top: 106%;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // border:1px solid white;
+
+    .line-social-media {
+        height: 4px;
+        width: 130px;
+        padding-right: 20px;
+    }
+
+    img.transition {
+        padding-right: 20px;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .mail-name {
+        // E-Mail decoration
+        font-size: 1rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(221, 114, 15);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 1s ease-in-out;
+        }
+    }
+
+    a {
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+
+        .mail-name {
+            position: relative;
+
+            &:hover {
+                color: rgb(221, 114, 15);
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+                width: 100%;
+                color: rgb(221, 114, 15);
+            }
+        }
+    }
+}
+
+.scroll-down-container {
+    position: absolute;
+    top: 85%;
+    right: 7%;
+    z-index: 30;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    // border: 1px solid white;
+
+    span {
+        transform: rotate(90deg);
+    }
+
+    img {
+        height: 25px;
+        object-fit: contain;
+        animation: arrow 4s ease-in-out infinite;
+
+        @keyframes arrow {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+// End Reference Icon Line Section

@@ -1,0 +1,106 @@
+// Begin About Me Section - Text
+
+.about-me-container-flex {
+    position: relative;
+    margin-top: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-left: 10%;
+    // border: 1px solid white;
+
+
+    .about-me-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+
+        p {
+            font-size: 0.8rem;
+            line-height: 1.3rem; // Line-height of Text
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .bulb-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 50px;
+                object-fit: contain;
+                margin-right: 30px;
+            }
+        }
+
+        .puzzle-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 50px;
+                object-fit: contain;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    // End About Me Section - Text
+
+    // Begin About Me Section - Round Portrait
+
+    .ellipse-container {
+        position: absolute;
+        right: 10%;
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 100%;
+        overflow: hidden;
+        // border: 1px solid white;
+
+        .round-portrait-container {
+
+            .portrait img {
+                position: absolute;
+                bottom: 1%;
+                right: 6%;
+                height: 350px;
+                object-fit: cover;
+                z-index: 15;
+            }
+
+            .ellipse img {
+                position: absolute;
+                height: 350px;
+                object-fit: cover;
+                z-index: 16;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+
+    .vektor-container {
+        position: absolute;
+        right: 0;
+        z-index: 0;
+
+        img {
+            height: 4px;
+            width: 10vw;
+        }
+    }
+}
+
+
+
+
+// End About Me Section - Round Portrait
