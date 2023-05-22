@@ -2,7 +2,7 @@
 
 .about-me-container-flex {
     position: relative;
-    margin-top: 115px;
+    margin-top: -50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,15 +15,17 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        text-align: justify;
 
         p {
-            font-size: 0.8rem;
-            line-height: 1.3rem; // Line-height of Text
+            font-size: max(12px, 1vw);
+            text-align: justify;
+            // font-size: 16px;
+            // line-height: 1.3rem; // Line-height of Text
         }
 
         h2 {
             font-size: 2.5rem;
+            margin-bottom: 35px;
         }
 
         .bulb-container {
@@ -58,8 +60,8 @@
     .ellipse-container {
         position: absolute;
         right: 10%;
-        width: 350px;
-        height: 350px;
+        width: 30vw; // 350px
+        height: 30vw; // 350px
         display: flex;
         justify-content: flex-end;
         border-radius: 100%;
@@ -72,14 +74,14 @@
                 position: absolute;
                 bottom: 1%;
                 right: 6%;
-                height: 350px;
+                height: 30vw; //350px
                 object-fit: cover;
                 z-index: 15;
             }
 
             .ellipse img {
                 position: absolute;
-                height: 350px;
+                height: 30vw; //350px
                 object-fit: cover;
                 z-index: 16;
                 right: 0;
