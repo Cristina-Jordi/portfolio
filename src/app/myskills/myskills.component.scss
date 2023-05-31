@@ -1,0 +1,95 @@
+$orange: #FA7902;
+$red: #FF4747;
+
+#my-skills-anchor {
+    height: 100vh;
+    top:100px;
+    // scroll-margin-top: 100vh;
+}
+
+// Begin My Skills Section - Icons Grid
+
+.my-skills-container {
+    position: relative;
+    top: 150px;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 10%;
+    // border: 1px solid white;
+
+    // Grid Icons Container
+    .skills-icons-container {
+        position: relative;
+        height: 100%;
+        width: 35%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 93px;
+        grid-row-gap: 50px;
+        // border: 1px solid white;
+
+        img {
+            width: 60px;
+            object-fit: cover;
+            // padding-right: 10px;
+        }
+    }
+
+    // End My Skills Section - Icons Grid
+
+    // Begin My Skills Section - Text and Button
+
+    .text-my-skills {
+        margin-top: 15px;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-right: 10%;
+        // border: 1px solid white;
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-weight: 700;
+            font-size: max(20px, 6.3vw); // ca. 90px
+            margin-bottom: 4vw;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: max(12px, 0.9vw);
+            text-align: right;
+        }
+
+        .button-center {
+            width: 100%;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+
+            .another-btn {
+                margin-top: 30px;
+                margin-left: 0;
+            }
+        }
+
+        .vektor-container-my-skills {
+            position: absolute;
+            top: 11%;
+            right: 0;
+            z-index: 0;
+
+            img {
+                height: 4px;
+                width: 6vw; //ca. 58px
+            }
+        }
+    }
+}
+
+// End My Skills Section - Text and Button

@@ -8,13 +8,15 @@ import { IamComponent } from './iam/iam.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MyskillsComponent } from './myskills/myskills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     IamComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    MyskillsComponent
   ],
   imports: [
     BrowserModule,

@@ -34,10 +34,11 @@
     position: absolute;
     margin-top: -15px;
 
-    span {
+    span a{
         font-size: 2rem;
         color: rgb(221, 114, 15);
         cursor: pointer;
+        text-decoration: none;
     }
 }
 
