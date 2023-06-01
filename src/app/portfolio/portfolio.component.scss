@@ -1,0 +1,129 @@
+$orange: #FA7902;
+$red: #FF4747;
+
+#portfolio-anchor {
+    height: 100vh;
+}
+
+.portfolio-container-flex {
+    position: relative;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -112px;
+    margin-bottom: 60px;
+    // border: 1px solid white;
+
+    .container-line-6 {
+        width: 109px;
+
+        img.line-6 {
+            width: 109px;
+            height: 4px;
+            // border: 1px solid white;
+        }
+    }
+
+    .container-line-4 {
+        width: 520px;
+
+        img.line-4 {
+            width: 520px;
+            height: 4px;
+            // border: 1px solid white;
+        }
+    }
+
+    .container-text-portfolio {
+        display: flex;
+        align-items: flex-end;
+        height:180px;
+        //  border: 1px solid white;
+
+        p {
+            margin-top: 5px;
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-weight: 700;
+            font-size: max(20px, 6.3vw); // ca. 90px
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.portfolio-container-text {
+    margin-bottom: 145px;
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: 400;
+        text-align: center;
+        line-height: 19px;
+        font-size: max(12px, 0.95vw); // ca. 16px
+    }
+}
+
+// Begin Portfolio Section - Grid System
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: $red;
+    font-weight: 700;
+    margin-bottom: 38px;
+    font-size: max(15px, 2.1vw); // ca. 32px
+
+}
+
+.title-grid {
+    font-family: 'Poppins', sans-serif;
+    color: $orange;
+    font-weight: 400;
+    margin-bottom: 28px;
+    font-size: max(13px, 1.5vw); // ca. 23px
+}
+
+.text-portfolio {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    // text-align: justify;
+    margin-bottom: 19px;
+    line-height: 19px;
+    font-size: max(12px, 0.95vw); // ca. 16px
+}
+
+ .grid-container-format {
+     position:relative;
+     // width: 90%;
+     // border: 1px solid whitesmoke;
+ }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+}
+
+.grid-item {
+    margin-right: 60px;
+    // border: 1px solid whitesmoke;
+}
+
+img {
+    width: 620px;
+    object-fit: cover;
+}
+
+.align-buttons {
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid whitesmoke;
+}
+
+// End Portfolio Section - Grid System
+
