@@ -1,16 +1,13 @@
 $orange: #FA7902;
 $red: #FF4747;
 
-#my-skills-anchor {
+#my-skills {
     height: 100vh;
-    top: 100px;
 }
-
-// Begin My Skills Section - Icons Grid
 
 .my-skills-container {
     position: relative;
-    top: 150px;
+    top: 200px;
     bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -22,10 +19,10 @@ $red: #FF4747;
     .skills-icons-container {
         position: relative;
         height: 100%;
-        width: 35%;
+        width: 43%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 93px;
+        // grid-column-gap: 93px;
         grid-row-gap: 50px;
         // border: 1px solid white;
 
@@ -47,7 +44,7 @@ $red: #FF4747;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        margin-right: 10%;
+        margin-right: 20%;
         // border: 1px solid white;
 
         h2 {
@@ -63,6 +60,7 @@ $red: #FF4747;
             font-weight: 400;
             font-size: max(12px, 0.9vw);
             text-align: right;
+            margin-top:8%;
         }
 
         .button-center {
@@ -70,6 +68,7 @@ $red: #FF4747;
             display: flex;
             align-self: center;
             justify-content: center;
+            margin-top: 7%;
 
             .another-btn {
                 margin-top: 30px;
@@ -85,7 +84,7 @@ $red: #FF4747;
 
             img {
                 height: 4px;
-                width: 6vw; //ca. 58px
+                width: 15vw; //ca. 58px
             }
         }
     }
