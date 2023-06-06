@@ -3,7 +3,7 @@ $red: #FF4747;
 
 #my-skills-anchor {
     height: 100vh;
-    top:100px;
+    top: 100px;
 }
 
 // Begin My Skills Section - Icons Grid
@@ -92,3 +92,14 @@ $red: #FF4747;
 }
 
 // End My Skills Section - Text and Button
+
+.background-orange-my-skills {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    background-image: url(../../assets/img/my_skills/orange_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 261px;
+    height: 666px;
+}

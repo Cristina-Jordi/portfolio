@@ -112,7 +112,15 @@ $red: #FF4747;
     }
 }
 
-
-
-
 // End About Me Section - Round Portrait
+
+.background-red {
+    position: absolute;
+    right: 0;
+    top: 96%;
+    background-image: url(../../assets/img/portfolio/red_1_am.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 600px;
+}

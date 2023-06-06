@@ -39,7 +39,7 @@ $red: #FF4747;
     .container-text-portfolio {
         display: flex;
         align-items: flex-end;
-        height:180px;
+        height: 180px;
         //  border: 1px solid white;
 
         p {
@@ -97,11 +97,11 @@ h3 {
     font-size: max(12px, 0.95vw); // ca. 16px
 }
 
- .grid-container-format {
-     position:relative;
-     // width: 90%;
-     // border: 1px solid whitesmoke;
- }
+.grid-container-format {
+    position: relative;
+    // width: 90%;
+    // border: 1px solid whitesmoke;
+}
 
 .grid-container {
     display: grid;
@@ -116,15 +116,82 @@ h3 {
 }
 
 img {
-    width: 450px;
+    width: 66%;
     object-fit: cover;
+    align-items: start;
 }
 
-.align-buttons {
-    display: flex;
-    justify-content: space-between;
-    // border: 1px solid whitesmoke;
+img.right {
+    transform: scaleX(-1);
 }
 
 // End Portfolio Section - Grid System
 
+
+// Button Formatting
+.btn-right-portfolio {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+    // border: 1px solid whitesmoke;
+
+    button {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+}
+
+.btn-left-portfolio {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+    margin-left: 206px;
+    margin-right: 0;
+    // // border: 1px solid whitesmoke;
+
+
+
+    button {
+        margin-top: 20px;
+        margin-left: 0;
+        // &:before {
+        //         background-color: $red;
+        //     }
+    }
+}
+
+.btn-bg-left {
+    &:before {
+        background-color: $red;
+    }
+}
+
+.btn-bg-right {
+    &::before {
+        background-color: transparent;
+        border: 1px solid $orange;
+    }
+}
+
+.background-red-portfolio {
+    position: absolute;
+    left: 0;
+    top: 33%;
+    background-image: url(../../assets/img/portfolio/red_2_p.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 636px;
+    height: 773px;
+}
+
+.background-orange-portfolio {
+    position: absolute;
+    right: 0;
+    bottom: -22%;
+    background-image: url(../../assets/img/portfolio/orange_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 392px;
+    height: 1006px;
+}
