@@ -4,3 +4,8 @@
     <textarea type="text" name="message" #messageField placeholder="Your message"></textarea><br>
     <button #sendButton class="btn-contact"> Send message 😊 </button>
 </form>
+
+<div class="fade-in-out" [ngClass]="{'show': formSubmitted}">
+    <p class="thank-you-message">Vielen Dank für Ihre Nachricht! <br>
+    Wir werden uns bald bei Ihnen melden.</p>
+</div>

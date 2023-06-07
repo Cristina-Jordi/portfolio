@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
+  formSubmitted: boolean = false;
 
   constructor() { }
 
@@ -31,10 +32,17 @@ export class ContactComponent implements OnInit {
     fd.append('message', messageField.value);
 
     await fetch('https://cristina-jordi.developerakademie.net/portfolio/send_mail/send_mail.php',
-    {
-      method: 'POST',
-      body: fd
-    });
+      {
+        method: 'POST',
+        body: fd
+      });
+
+    this.formSubmitted = true;
+
+    setTimeout(() => {
+      this.formSubmitted = false;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 5000);
 
     nameField.disabled = false;
     messageField.disabled = false;

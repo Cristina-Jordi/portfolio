@@ -1,6 +1,24 @@
+$orange: #FA7902;
+$red: #FF4747;
 
+.btn-contact {
+    width: 253px;
+    height: 58px;
+}
 
-.btn-contact{
-    width:253px;
-    height:58px;
+.fade-in-out {
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in-out.show {
+    opacity: 1;
+}
+
+.thank-you-message {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: max(12px, 0.9vw);
+    color: $red;
 }
