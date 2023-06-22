@@ -8,6 +8,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class ContactComponent implements OnInit {
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
+  @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
   formSubmitted: boolean = false;
@@ -42,6 +43,10 @@ export class ContactComponent implements OnInit {
     setTimeout(() => {
       this.formSubmitted = false;
       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      nameField.value = '';
+      this.emailField.nativeElement.value = '';
+      messageField.value = '';
     }, 5000);
 
     nameField.disabled = false;
