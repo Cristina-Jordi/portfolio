@@ -3,19 +3,17 @@ $red: #FF4747;
 $green: #50b650;
 
 
-
-
 // Contact form - formatting
 
 .contact_container {
     position: relative;
     display: flex;
-    padding-left: 10%;
+    padding-left: 14%;
     flex-direction: column;
     margin-top: 100px;
 
     .title_contact {
-        height: 150px;
+        height: 200px;
         // border: 1px solid white;
 
         h2 {
@@ -137,19 +135,20 @@ $green: #50b650;
         }
 
 
+
     }
 
 }
 
 .background-red-container {
     position: absolute;
-    left: 0;
-    top: 83%;
-    background-image: url(../../assets/img/contact/red_3_footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 479px;
-    height: 510px;
+        left: 0;
+        top: 107%;
+        background-image: url(../../assets/img/contact/red_3_footer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 558px;
+        height: 616px;
 }
 
 input:-webkit-autofill,
@@ -161,8 +160,55 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    border: 1px solid green;
+    border: 1px solid $green;
     -webkit-text-fill-color: white;
     -webkit-box-shadow: 0 0 0px 1000px transparent inset;
     transition: background-color 5000s ease-in-out 0s;
 }
+
+.valid-field {
+    border: 1px solid $green;
+}
+
+.invalid-field {
+    border: 1px solid $red;
+}
+
+// Begin To top Button Formatting
+
+.top-btn {
+    // position: fixed;
+    position: absolute;
+    bottom: -103%;
+    right: 4%;
+    z-index: 9999;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.3;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.top-btn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    object-fit: cover;
+}
+
+.top-btn:before {
+    border-radius: 100%;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: all 200ms ease-in-out;
+}
+
+// End To top Button Formatting

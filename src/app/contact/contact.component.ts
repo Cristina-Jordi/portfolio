@@ -6,6 +6,11 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
@@ -47,10 +52,49 @@ export class ContactComponent implements OnInit {
       nameField.value = '';
       this.emailField.nativeElement.value = '';
       messageField.value = '';
+
+      // Zurücksetzen der Border-Stile
+      nameField.classList.remove('valid-field');
+      this.emailField.nativeElement.classList.remove('valid-field');
+      messageField.classList.remove('valid-field');
     }, 5000);
 
     nameField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
+  }
+
+  validateFields() {
+    // Überprüfen der Felder auf Korrektheit und Anwenden des Border-Stils
+    let nameField = this.nameField.nativeElement;
+    let emailField = this.emailField.nativeElement;
+    let messageField = this.messageField.nativeElement;
+
+    // Name-Feld validieren
+    if (nameField.value.trim() !== '') {
+      nameField.classList.add('valid-field');
+    } else {
+      nameField.classList.remove('valid-field');
+    }
+
+    // Email-Feld validieren
+    if (this.validateEmail(emailField.value.trim())) {
+      emailField.classList.add('valid-field');
+    } else {
+      emailField.classList.remove('valid-field');
+    }
+
+    // Message-Feld validieren
+    if (messageField.value.trim() !== '') {
+      messageField.classList.add('valid-field');
+    } else {
+      messageField.classList.remove('valid-field');
+    }
+  }
+
+  validateEmail(email: string): boolean {
+    // Email-Validierung (vereinfachte Überprüfung)
+    // Hier können Sie eine detailliertere Email-Validierung implementieren
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 }

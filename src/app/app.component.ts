@@ -13,8 +13,4 @@ export class AppComponent {
   onWindowScroll() {
     this.showButton = window.pageYOffset > 200;
   }
-
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
 }

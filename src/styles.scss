@@ -6,6 +6,8 @@
     src: url('../src/assets/fonts/Poppins-Black.ttf') format('truetype');
 }
 
+$bg-color: #141D2F;
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +25,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
-    background-color: #141D2F;
+    background-color: $bg-color;
     color: #FFFFFF;
     background-image: url('../src/assets/img/about_me/Red\ 1\ AM.png');
     background-repeat: no-repeat;
