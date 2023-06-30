@@ -22,15 +22,23 @@ $red: #FF4747;
         width: 43%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        // grid-column-gap: 93px;
         grid-row-gap: 50px;
         // border: 1px solid white;
 
         img {
-            width: 60px;
+            width: 70px;
             object-fit: cover;
-            // padding-right: 10px;
+            transition-duration: 125ms;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            transition-property: all;
+
+            &:hover {
+                transform: translateY(-10px);
+            }
         }
+
+
     }
 
     // End My Skills Section - Icons Grid
@@ -58,9 +66,10 @@ $red: #FF4747;
         p {
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
-            font-size: max(12px, 0.9vw);
+            font-size: max(12px, 0.9vw); // ca. 16px
+            line-height: 20px;
             text-align: right;
-            margin-top:8%;
+            margin-top: 8%;
         }
 
         .button-center {
@@ -78,7 +87,7 @@ $red: #FF4747;
 
         .vektor-container-my-skills {
             position: absolute;
-            top: 11%;
+            top: 25px;
             right: 0;
             z-index: 0;
 
@@ -101,4 +110,73 @@ $red: #FF4747;
     background-size: cover;
     width: 261px;
     height: 666px;
+    z-index: -1;
+}
+
+
+@media (max-width: 950px) {
+    .my-skills-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -220px;
+        padding-left: 0;
+
+        .background-orange-my-skills {
+            z-index: -1;
+        }
+
+        .skills-icons-container {
+            margin-top: 80px;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-row-gap: 7vw;
+            padding-left: 10%;
+
+            @media (max-width: 530px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media (max-width: 330px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .skills-icons-container img {
+            width: 9vw;
+            object-fit: cover;
+            transition-duration: 125ms;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            transition-property: transform;
+        }
+
+        .skills-icons-container img:hover {
+            transform: translateY(-10px);
+        }
+
+        .text-my-skills {
+            width: 95%;
+
+            .another-btn {
+                position: absolute;
+                top: 103%;
+            }
+
+            p {
+                font-size: max(12px, 1.9vw);
+                margin-top: 0;
+            }
+        }
+    }
+
+    .vektor-container-my-skills,
+    .vektor-my-skills {
+        width: 4vw;
+        margin-top: -33px;
+        position: absolute;
+        top: 74px;
+    }
 }

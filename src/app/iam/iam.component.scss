@@ -8,6 +8,10 @@
 $orange: #FA7902;
 $red: #FF4747;
 
+.btn-lets-talk {
+    margin-left: 30%;
+}
+
 .vector-container {
     position: relative;
     display: flex;
@@ -47,14 +51,14 @@ $red: #FF4747;
     justify-content: flex-end;
     width: 100%;
     margin-bottom: 190px;
-    line-height: 50px;
+    line-height: 44px;
 
     .iam-text {
         position: absolute;
-        margin-left: -105px;
-        margin-top: 34px;
+        margin-left: -8.7%;
+        margin-top: 28px;
         margin-right: 10px;
-        font-size: 2.6rem; // 64px
+        font-size: max(44px, 3.8vw); // ca. 64px 
         transform: rotate(-90deg);
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
@@ -62,13 +66,13 @@ $red: #FF4747;
     }
 
     .name-text {
-        font-size: 3.9rem; // 90px
+        font-size: max(20px, 5.5vw); // ca. 90px
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
     }
 
     .FD-text {
-        font-size: 2.52rem; // 58px
+        font-size: max(20px, 3.5vw); // ca. 58px
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         color: $red;
@@ -89,14 +93,13 @@ $red: #FF4747;
 .social-media-container {
     position: absolute;
     width: 60%;
-    bottom:-9vh;
+    bottom: -9vh;
     left: 0;
     right: 0;
     z-index: 30;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    // border:1px solid white;
 
     .line-social-media {
         height: 4px;
@@ -161,10 +164,10 @@ $red: #FF4747;
 
 .scroll-down-container {
     position: absolute;
-    top:0;
+    top: 0;
     right: 7%;
     z-index: 30;
-    height:84vh;
+    height: 84vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,3 +207,79 @@ $red: #FF4747;
 }
 
 // End Reference Icon Line Section
+
+
+@media (max-width: 950px) {
+
+    .btn-lets-talk {
+        margin-left: 22%;
+        margin-top: 2vh;
+    }
+
+    .iam-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 58%;
+        background-image: url(../../assets/img/i_am/photo_shadows_1.png);
+        background-position: -3px 5px;
+        background-size: 100%;
+        left: 20%;
+    }
+
+    .iam-text-container {
+        margin-top: 90%;
+        z-index: 6;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        line-height: 4vh;
+        // border: 1px solid white;
+
+        .right-space {
+            margin-right: 5%;
+        }
+
+        .iam-text {
+            position: absolute;
+            margin-left: -11%;
+            margin-top: 2.5vw;
+            margin-right: 10px;
+            font-size: max(26px, 3.7vw); // ca. 32px
+            ; // ca. 36px 
+        }
+
+        .name-text {
+            font-size: max(28px, 5.5vw); // ca. 45px
+        }
+
+        .FD-text {
+            font-size: max(18px, 3.5vw); // ca. 29px
+        }
+    }
+
+    .portrait-container {
+        position: relative;
+        justify-content: center;
+        width: 100%;
+
+        .portrait-img {
+            width: 40vw;
+            margin-top: -6%;
+        }
+    }
+
+    .scroll-down-container {
+        display: none;
+    }
+
+    .social-media-container {
+        bottom: -32vh;
+    }
+
+    .vector-shape-img {
+        top: 49%;
+    }
+}

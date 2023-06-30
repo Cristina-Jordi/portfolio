@@ -8,7 +8,6 @@ $red: #FF4747;
 .portfolio-container-flex {
     position: relative;
     width: 100%;
-    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -94,13 +93,11 @@ h3 {
     // text-align: justify;
     margin-bottom: 19px;
     line-height: 19px;
-    font-size: max(12px, 0.95vw); // ca. 16px
+    font-size: max(12px, 0.9vw); // ca. 16px
 }
 
 .grid-container-format {
     position: relative;
-    // width: 90%;
-    // border: 1px solid whitesmoke;
 }
 
 .grid-container {
@@ -112,14 +109,12 @@ h3 {
 .grid-item {
     margin-right: 60px;
     margin-bottom: 120px;
-    // border: 1px solid whitesmoke;
 }
 
 img {
     width: 55%;
     object-fit: cover;
     align-items: start;
-    // border: 1px solid whitesmoke;
 }
 
 img.right {
@@ -196,3 +191,86 @@ img.right {
     width: 392px;
     height: 1006px;
 }
+
+@media (max-width: 950px) {
+
+    .portfolio-container-flex {
+        margin-top: 27%;
+
+        .container-line-4 {
+            width: unset;
+
+            img.line-4 {
+                width: 75px;
+            }
+
+        }
+
+        .container-line-6 {
+            width: unset;
+
+            img.line-6 {
+                width: 20px;
+            }
+        }
+    }
+}
+
+.portfolio-container-text {
+
+    p {
+        font-size: max(12px, 0.9vw); // ca. 16px
+        line-height: 22px;
+    }
+}
+
+// .grid-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     text-align: center;
+//     margin-bottom: 120px;
+
+//     .grid-item {
+//         display: flex;
+//         flex-direction: column;
+//         text-align: unset;
+//         margin-right: unset;
+
+//         img {
+//             width: 45%;
+//             object-fit: cover;
+//             align-items: center;
+            // order: -1;
+            // border:1px solid white;
+    // //     }
+    // // }
+
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        color: $red;
+        font-weight: 700;
+        margin-bottom: 38px;
+        font-size: max(15px, 2.1vw); // ca. 32px
+        text-align: center;
+
+    }
+
+//     .title-grid {
+//         font-family: 'Poppins', sans-serif;
+//         color: $orange;
+//         font-weight: 400;
+//         margin-bottom: 28px;
+//         font-size: max(13px, 1.5vw); // ca. 23px
+//     }
+
+//     .text-portfolio {
+//         font-family: 'Poppins', sans-serif;
+//         color: white;
+//         font-weight: 400;
+//         text-align: center;
+//         margin-bottom: 19px;
+//         line-height: 19px;
+//         font-size: max(12px, 0.95vw); // ca. 16px
+//     }
+// }
