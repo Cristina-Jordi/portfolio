@@ -142,13 +142,13 @@ $green: #50b650;
 
 .background-red-container {
     position: absolute;
-        left: 0;
-        top: 107%;
-        background-image: url(../../assets/img/contact/red_3_footer.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 558px;
-        height: 616px;
+    left: 0;
+    top: 107%;
+    background-image: url(../../assets/img/contact/red_3_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 558px;
+    height: 616px;
 }
 
 input:-webkit-autofill,
@@ -212,3 +212,71 @@ select:-webkit-autofill:focus {
 }
 
 // End To top Button Formatting
+
+
+@media (max-width: 950px) {
+
+    .contact_content_container {
+        flex-direction: column;
+
+        .form_contact {
+            padding-left: 0;
+        }
+    }
+
+    .contact_container {
+        padding-left: 4%;
+
+        .text_contact {
+            width: 100%;
+
+            .text {
+                line-height: 21px;
+                font-size: max(12px, 1.7vw);
+                margin-bottom: -30px;
+            }
+
+        }
+
+        .title_contact {
+            height: 92px;
+            margin-top: 8vh;
+
+            .vektor-container-contact {
+                top: 21%;
+
+                img {
+                    width: 2.2vw; // ca. 20px
+                }
+            }
+        }
+
+        .form_contact {
+
+            input,
+            textarea {
+                width: 90%;
+            }
+        }
+    }
+
+    .top-btn {
+        bottom: -179%;
+
+        img {
+            height: 19px;
+        }
+    }
+
+    .background-red-container {
+        z-index: -1;
+        top: 830px;
+        width: 239px;
+        height: 236px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+.imprint-container {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: max(20px, 2vw);
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: max(15px, 1.2vw);
+        margin-bottom: 0;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: max(12px, 0.9vw);
+    }
+
+    .imprint {
+        font-size: 0.8rem;
+        margin-left: 0;
+
+        span {
+            color: rgb(221, 114, 15);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+
+            &:hover {
+                color: rgb(221, 114, 15);
+
+                span {
+                    color: rgba(221, 114, 15, 0)
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 1px;
+                background-color: rgb(221, 114, 15);
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+                width: 100%;
+            }
+        }
+    }
+}
