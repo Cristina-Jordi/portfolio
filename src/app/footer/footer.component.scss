@@ -1,79 +1,90 @@
 $bg-color: #141D2F;
 $orange: #FA7902;
 
-.footer_container {
-    position: relative;
-    justify-content: center;
-    display: flex;
-    height: 191px;
-    background-color: $bg-color;
-    border-top: 4px solid $orange;
-    margin-top: 451px;
+@media (min-width: 950px) {
 
-    .footer_content_container {
+    .imprint {
+        display: none;
+    }
+
+    .footer_container {
+        position: relative;
+        justify-content: center;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
+        height: 191px;
+        background-color: $bg-color;
+        border-top: 4px solid $orange;
+        margin-top: 451px;
 
-
-        .name_container {
-            font-family: 'Allison Script', sans-serif;
-
-            span a {
-                font-size: 2rem;
-                color: rgb(221, 114, 15);
-                cursor: pointer;
-                text-decoration: none;
-            }
-        }
-
-        .copyright_container {
-            display: flex;
-            margin-top: 14px;
-            font-family: 'Allison Script', sans-serif;
-            font-weight: 400;
-            font-size: 23px;
-        }
-
-        .social_media_container {
+        .footer_content_container {
             display: flex;
             justify-content: space-between;
-            width: 150px;
+            align-items: center;
+            width: 80%;
 
-            img.transition {
-                height: 30px;
-                object-fit: cover;
-                cursor: pointer;
-                transition: all 300ms ease-in-out;
 
-                &:hover {
-                    transform: scale(1.2);
+            .name_container {
+                font-family: 'Allison Script', sans-serif;
+                margin-top: 20px;
+
+                span a {
+                    font-size: 2rem;
+                    color: rgb(221, 114, 15);
+                    cursor: pointer;
+                    text-decoration: none;
                 }
             }
-        }
 
-        .imprint {
-            font-size: 0.8rem;
+            .copyright_container {
+                display: flex;
+                margin-top: 14px;
+                font-family: 'Allison Script', sans-serif;
+                font-weight: 400;
+                font-size: 23px;
+            }
+
+            .social_media_container {
+                display: flex;
+                justify-content: space-between;
+                width: 150px;
+
+                img.transition {
+                    height: 30px;
+                    object-fit: cover;
+                    cursor: pointer;
+                    transition: all 300ms ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .imprint-laptop-version {
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                font-weight: 400;
+                margin-top: 18px;
+                font-size: max(12px, 1.1vw); // ca. 16px
                 margin-left: 0;
-            
+
                 span {
                     color: rgb(221, 114, 15);
                 }
-            
+
                 a {
                     color: white;
                     text-decoration: none;
                     position: relative;
-            
+
                     &:hover {
                         color: rgb(221, 114, 15);
-            
+
                         span {
                             color: rgba(221, 114, 15, 0)
                         }
                     }
-            
+
                     &::after {
                         content: '';
                         position: absolute;
@@ -86,12 +97,13 @@ $orange: #FA7902;
                         transform-origin: left;
                         transition: transform 0.5s ease-in-out;
                     }
-            
+
                     &:hover::after {
                         transform: scaleX(1);
                         width: 100%;
                     }
                 }
+            }
         }
     }
 }
@@ -99,32 +111,108 @@ $orange: #FA7902;
 
 @media (max-width: 950px) {
 
+    .imprint-laptop-version {
+        display: none;
+    }
+
     .footer_container {
+        position: relative;
+        justify-content: center;
+        display: flex;
         margin-top: 665px;
-        height: 305px;
+        height: 380px;
+        background-color: $bg-color;
+        border-top: 4px solid $orange;
 
         .footer_content_container {
             display: flex;
             flex-direction: column;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            height: 200px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            width: 100%;
 
             .name_container {
-                span {
-                    a {
-                        font-size: max(20px, 5.5vw);
-                    }
+                font-family: 'Allison Script', sans-serif;
+                margin-bottom: 32px;
+
+                span a {
+                    font-size: max(20px, 5.5vw);
+                    color: rgb(221, 114, 15);
+                    cursor: pointer;
+                    text-decoration: none;
                 }
             }
 
             .copyright_container {
 
                 p {
-                    font-size: max(13px, 1.8vw); // ca. 23px
+                    font-size: max(13px, 2vw); // ca. 23px
+                }
+            }
+
+            .social_media_container {
+                display: flex;
+                justify-content: space-between;
+                width: 150px;
+
+                img.transition {
+                    height: 30px;
+                    object-fit: cover;
+                    cursor: pointer;
+                    transition: all 300ms ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .imprint {
+                color: white;
+                font-weight: 400;
+                margin-top: 18px;
+                margin-left: 0;
+
+                span {
+                    color: rgb(221, 114, 15);
+                }
+
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    position: relative;
+                    font-size: max(12px, 1.8vw); // ca. 16px
+
+                    &:hover {
+                        color: rgb(221, 114, 15);
+
+                        span {
+                            color: rgba(221, 114, 15, 0)
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -2px;
+                        width: 100%;
+                        height: 1px;
+                        background-color: rgb(221, 114, 15);
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: transform 0.5s ease-in-out;
+                    }
+
+                    &:hover::after {
+                        transform: scaleX(1);
+                        width: 100%;
+                    }
                 }
             }
         }
     }
-
 }
