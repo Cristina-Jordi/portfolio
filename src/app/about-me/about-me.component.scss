@@ -14,20 +14,23 @@ $red: #FF4747;
     align-items: center;
     padding-left: 10%;
     height: 100vh;
+    margin-top: -162px;
     // border: 1px solid white;
 
 
     .about-me-container {
-        width: 37%;
+        width: 40%;
         display: flex;
         flex-direction: column;
+        height: 76%;
         // border: 1px solid white;
 
         p {
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
-            font-size: max(12px, 0.9vw);
+            font-size: max(12px, 1.25vw); // ca. 16px
             text-align: justify;
+            line-height: 122%; // ca. 19px
         }
 
         h2 {
@@ -70,9 +73,9 @@ $red: #FF4747;
 
     .ellipse-container {
         position: absolute;
-        right: 15vw; // 10%
-        width: 30vw; // 350px
-        height: 30vw; // 350px
+        right: 12vw;
+        width: 35vw;
+        height: 35vw;
         display: flex;
         justify-content: flex-end;
         border-radius: 100%;
@@ -85,14 +88,14 @@ $red: #FF4747;
                 position: absolute;
                 bottom: 1%;
                 right: 3vw; // 6%
-                height: 30vw; //350px
+                height: 35vw; //350px
                 object-fit: cover;
                 z-index: 15;
             }
 
             .ellipse img {
                 position: absolute;
-                height: 30vw; //350px
+                height: 35vw;
                 object-fit: cover;
                 z-index: 16;
                 right: 0;
@@ -108,7 +111,7 @@ $red: #FF4747;
 
         img {
             height: 4px;
-            width: 15vw; //ca. 267px
+            width: 12vw; //ca. 267px
         }
     }
 }
@@ -135,9 +138,10 @@ $red: #FF4747;
         .about-me-container {
             width: 100%;
             padding-right: 10%;
+            height: unset;
 
             p {
-                font-size: max(12px, 1.9vw); // ca. 16px
+                font-size: max(12px, 1.2vw); // ca. 16px
                 line-height: 22px;
             }
         }
@@ -153,5 +157,63 @@ $red: #FF4747;
 
     .vektor-container {
         display: none;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .about-me-container-flex {
+        margin-top: -308px;
+
+        .about-me-container {
+
+            p {
+                font-size: max(12px, 2.5vw);
+                line-height: 21px;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 430px) {
+    .about-me-container-flex {
+
+        .about-me-container {
+            margin-top: 400px;
+
+            h2 {
+                font-size: 45px;
+                margin-bottom: 35px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 19px;
+                // text-align: unset;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 390px) {
+    .about-me-container-flex {
+
+        .about-me-container {
+            margin-top: 400px;
+
+            h2 {
+                font-size: 45px;
+                margin-bottom: 35px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 19px;
+                // text-align: unset;
+            }
+        }
     }
 }

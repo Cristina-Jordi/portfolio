@@ -17,11 +17,10 @@ $red: #FF4747;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        margin-top: -112px;
-        margin-bottom: 60px;
+        margin-top: -240px;
+        margin-bottom: 50px;
 
         .container-line-6 {
-            width: 109px;
 
             img.line-6 {
                 width: 109px;
@@ -30,10 +29,10 @@ $red: #FF4747;
         }
 
         .container-line-4 {
-            width: 520px;
 
             img.line-4 {
-                width: 520px;
+                // width: 520px;
+                width: 33vw;
                 height: 4px;
             }
         }
@@ -45,7 +44,6 @@ $red: #FF4747;
             //  border: 1px solid white;
 
             p {
-                margin-top: 5px;
                 display: flex;
                 font-family: 'Poppins', sans-serif;
                 color: white;
@@ -53,12 +51,15 @@ $red: #FF4747;
                 font-size: max(20px, 6.3vw); // ca. 90px
                 margin-right: 20px;
                 margin-left: 20px;
+                margin-bottom: 3px;
             }
         }
     }
 
     .portfolio-container-text {
         margin-bottom: 145px;
+        display: flex;
+        justify-content: flex-end;
 
         p {
             font-family: 'Poppins', sans-serif;
@@ -66,7 +67,8 @@ $red: #FF4747;
             font-weight: 400;
             text-align: center;
             line-height: 19px;
-            font-size: max(12px, 0.95vw); // ca. 16px
+            font-size: max(12px, 1.1vw); // ca. 16px
+            width: 100%;
         }
     }
 
@@ -80,8 +82,8 @@ $red: #FF4747;
         font-family: 'Poppins', sans-serif;
         color: $red;
         font-weight: 700;
-        margin-bottom: 1vw;
-        font-size: max(15px, 2.1vw); // ca. 32px
+        margin-bottom: 1.5vw;
+        font-size: max(15px, 2.52vw); // ca. 32px
 
     }
 
@@ -89,8 +91,9 @@ $red: #FF4747;
         font-family: 'Poppins', sans-serif;
         color: $orange;
         font-weight: 400;
-        margin-bottom: 1vw;
-        font-size: max(13px, 1.5vw); // ca. 23px
+        margin-bottom: 1.3vw;
+        line-height: 27px;
+        font-size: max(13px, 1.83vw); // ca. 23px
     }
 
     .text-portfolio {
@@ -98,41 +101,39 @@ $red: #FF4747;
         color: white;
         font-weight: 400;
         margin-bottom: 19px;
-        line-height: 19px;
-        font-size: max(12px, 0.9vw); // ca. 16px
+        line-height: 23px;
+        font-size: max(12px, 1.25vw); // ca. 16px
     }
 
     .grid-container-format {
         position: relative;
+        display: flex;
+        justify-content: center;
     }
 
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, auto);
-
+        gap: 30px;
+        width: 80%;
     }
 
     .grid-item {
-        margin-right: 60px;
-        margin-bottom: 120px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-bottom: 100px;
     }
 
     .img-right {
-
-        width: 400px;
+        height: 23vw;
         object-fit: cover;
-        align-items: start;
+        margin-top: -42px;
         transform: scaleX(-1);
     }
 
     .img-left {
-
-        width: 400px;
+        height: 23vw;
         object-fit: cover;
-        align-items: start;
+        margin-top: -38px;
     }
 
     // End Portfolio Section - Grid System
@@ -153,11 +154,13 @@ $red: #FF4747;
 
     .btn-left-portfolio {
         display: flex;
-        justify-content: space-between;
-        width: 70%;
+        // justify-content: space-between;
+        justify-content: flex-end;
+        // width: 70%;
         margin-left: 98px;
         margin-right: 0;
-        gap: 10%;
+        // gap: 10%;
+        gap: 16%;
 
         button {
             margin-top: 20px;
@@ -195,24 +198,26 @@ $red: #FF4747;
     .background-red-portfolio {
         position: absolute;
         left: 0;
-        top: 33%;
+        top: 40%;
         background-image: url(../../assets/img/portfolio/red_2_p.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 636px;
         height: 773px;
         z-index: -1;
+        opacity: 0.7;
     }
 
     .background-orange-portfolio {
         position: absolute;
         right: 0;
-        bottom: -22%;
+        bottom: -4%;
         background-image: url(../../assets/img/portfolio/orange_2.png);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 392px;
+        width: 382px;
         height: 1006px;
+        z-index: -1;
     }
 }
 
@@ -242,7 +247,7 @@ $red: #FF4747;
             width: unset;
 
             img.line-4 {
-                width: 75px;
+                width: 33vw;
                 height: 4px;
             }
         }
@@ -381,4 +386,236 @@ $red: #FF4747;
 
     // End Grid System formatting
 
+}
+
+@media (max-width: 590px) {
+
+    .portfolio-container-flex {
+        margin-top: -40px;
+        display: flex;
+        justify-content: flex-end;
+        height: 160px;
+        align-items: flex-end;
+    }
+
+    .mobile-container-portfolio {
+
+        .portfolio-img {
+            img {
+                width: 80%;
+            }
+        }
+
+        .portfolio-text {
+
+            h3 {
+                line-height: 21px;
+                font-size: max(12px, 4vw);
+                margin-bottom: -1%;
+            }
+
+            .text-portfolio {
+                line-height: 21px;
+                font-size: max(12px, 2.5vw);
+            }
+
+            p {
+                line-height: 21px;
+                font-size: max(12px, 3vw);
+                margin-top: 20px;
+                margin-bottom: -1%;
+            }
+        }
+    }
+
+    .portfolio-container-text {
+        p {
+            font-size: max(12px, 2.5vw);
+            line-height: 19px;
+            margin-bottom: -10%;
+            margin-top: 15px;
+        }
+    }
+
+}
+
+@media (max-width: 430px) {
+    .mobile-container-portfolio {
+        .portfolio-img {
+            img {
+                width: 111%;
+
+            }
+        }
+
+        .portfolio-text {
+            margin-bottom: 60px;
+
+            h3 {
+                font-size: 32px;
+                margin-bottom: -1%;
+            }
+
+            p {
+                line-height: 27.6px;
+                font-size: 23px;
+                text-align: center;
+            }
+
+            .text-portfolio {
+                line-height: 19.2px;
+                font-size: 16px;
+            }
+
+            .btn-portfolio {
+                .btn-live-test {
+                    width: 152px;
+                    height: 48px;
+                    font-size: 19px;
+                }
+
+                .btn-github {
+                    margin-left: 12%;
+                    width: 137px;
+                    height: 48px;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
+    .portfolio-container-text {
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 2%;
+            margin-top: 4px;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+        }
+    }
+
+    .portfolio-container-flex {
+        margin-top: 9px;
+
+        .container-line-4 {
+            height: 53px;
+            margin-left: -7px;
+
+            img.line-4 {
+                width: 75px;
+                height: 4px;
+            }
+        }
+
+        .container-line-6 {
+            height: 53px;
+            margin-right: -8px;
+
+            img.line-6 {
+                width: 20px;
+                height: 4px;
+            }
+        }
+
+        .container-text-portfolio {
+            p {
+                font-size: 45px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 390px) {
+
+    .mobile-container-portfolio {
+        .portfolio-img {
+            img {
+                width: 111%;
+
+            }
+        }
+
+        .portfolio-text {
+            margin-bottom: 60px;
+
+            h3 {
+                font-size: 32px;
+                margin-bottom: -1%;
+            }
+
+            p {
+                line-height: 27.6px;
+                font-size: 23px;
+                text-align: center;
+            }
+
+            .text-portfolio {
+                line-height: 19.2px;
+                font-size: 16px;
+            }
+
+            .btn-portfolio {
+                .btn-live-test {
+                    width: 152px;
+                    height: 48px;
+                    font-size: 19px;
+                }
+
+                .btn-github {
+                    margin-left: 12%;
+                    width: 137px;
+                    height: 48px;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
+    .portfolio-container-text {
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 2%;
+            margin-top: 4px;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+        }
+    }
+
+    .portfolio-container-flex {
+        margin-top: 9px;
+
+        .container-line-4 {
+            height: 53px;
+            margin-left: -7px;
+
+            img.line-4 {
+                width: 75px;
+                height: 4px;
+            }
+        }
+
+        .container-line-6 {
+            height: 53px;
+            margin-right: -8px;
+
+            img.line-6 {
+                width: 20px;
+                height: 4px;
+            }
+        }
+
+        .container-text-portfolio {
+            p {
+                font-size: 45px;
+                margin-bottom: 35px;
+            }
+        }
+    }
 }

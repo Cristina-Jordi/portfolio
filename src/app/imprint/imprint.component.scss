@@ -1,16 +1,19 @@
 .imprint-container {
+    margin-top: 100px; // 8%
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 86px; // -11%;
 
-    h3 {
+    h2 {
         font-family: 'Poppins', sans-serif;
         color: white;
         font-weight: 700;
-        font-size: max(20px, 2vw);
-        margin-bottom: 30px;
+        font-size: max(20px, 6.3vw); // ca. 90px
+        line-height: 6vw;
+        margin-bottom: 2vw; // 35px
     }
 
-    h4 {
+    h3 {
         font-family: 'Poppins', sans-serif;
         color: white;
         font-weight: 700;
@@ -63,5 +66,12 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media (max-width: 390px) {
+
+    .imprint-container {
+        margin-bottom: 41px;
     }
 }

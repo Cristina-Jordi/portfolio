@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-imprint',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./imprint.component.scss']
 })
 export class ImprintComponent {
+
+  constructor(public router: Router) {
+
+  }
 
 }

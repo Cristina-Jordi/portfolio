@@ -3,6 +3,10 @@
     src: url('../../assets/fonts/Allison_Script.otf') format('opentype');
 }
 
+$orange: #FA7902;
+$red: #FF4747;
+$green: #50b650;
+
 // Begin Header Section
 
 @media (min-width: 615px) {
@@ -49,7 +53,7 @@
 
     .navi-container {
         float: right;
-        position: absolute right;
+        margin-right: -1%;
         font-size: 0.8rem;
 
         span {
@@ -126,30 +130,20 @@
         }
     }
 
-
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
+    // Start - Sandwich Navigation
 
     body {
         font-size: 23px;
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         color: white;
-        background: #16161a;
-        color: #f3f3f3;
     }
 
     a {
         text-decoration: none;
         outline: none;
         color: darken($color: #fff, $amount: 80);
+        transition: all 225ms ease-in-out;
     }
 
     li {
@@ -157,17 +151,20 @@
     }
 
     @keyframes hover {
+
+        // Im Menu die Links schwanken nach rechts
         50% {
-            transform: translateX(10px);
+            transform: translateX(20px);
         }
     }
 
     .offcanvas-menu {
+
         >label {
+            position: fixed;
             top: 11px;
             right: 30px;
-            position: fixed;
-            width: 40px;
+            width: 40px; // Position des Sandwich Menus
             height: 40px;
             cursor: pointer;
             transition: 0.3s ease;
@@ -194,6 +191,7 @@
                 background-color: white;
             }
 
+            // Die beiden Striche zu einem Kreuz
             span::before {
                 transform: translateY(-12px);
             }
@@ -204,13 +202,14 @@
         }
 
         nav {
+            // Nach Klick auf Sandwich
             position: fixed;
             top: -26px;
             height: 100vh;
             width: 100%;
             right: -100%;
             overflow: hidden;
-            background-color: rgba(20, 29, 47, 0.8);
+            background-color: rgba(20, 29, 47, 0.7);
             transition: 0.3s ease;
             z-index: 999;
 
@@ -218,21 +217,34 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                font-size: max(30px, 6vw);
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                font-family: "Allison Script", sans-serif;
+                margin-left: 60px;
+                margin-top: 52px;
+                color: $orange;
+                cursor: unset;
 
-                a {
-                    font-size: 2.5rem;
-                    font-weight: 500;
-                    display: flex;
-                    align-items: center;
-                    font-family: "Monoton", cursive;
-                    -webkit-text-fill-color: transparent;
+                // a {
+                //     font-size: max(30px, 6vw);
+                //     font-weight: 400;
+                //     display: flex;
+                //     align-items: center;
+                //     font-family: "Allison Script", sans-serif;
+                //     // color: white;
+                //     margin-left: 36px;
+                //     margin-top: 27px;
+                //     color: $orange;
+                //     cursor: unset;
 
-                    i {
-                        font-size: 4rem;
-                        background: linear-gradient(120deg, #49a4ed 30%, #3d00a9 110%);
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
+                //     i {
+                //         font-size: 4rem;
+                //         background: linear-gradient(120deg, #49a4ed 30%, #3d00a9 110%);
+                //         -webkit-text-fill-color: transparent;
+                //     }
+                // }
 
                 label {
                     width: 30px;
@@ -242,8 +254,8 @@
                     justify-content: center;
                     cursor: pointer;
                     transition: 0.3s ease;
-                    margin-top: 42px;
-                    margin-right: 38px;
+                    margin-top: -5px;
+                    margin-right: 40px;
 
                     span,
                     span:before,
@@ -254,8 +266,7 @@
             }
 
             >ul {
-                margin-top: 30px;
-                counter-reset: nav-link-count;
+                margin-top: 50%;
                 align-items: center;
                 display: flex;
                 justify-content: center;
@@ -267,7 +278,6 @@
                     transform: translateX(-30px);
                     opacity: 0;
                     transition: 0.4s ease;
-                    counter-increment: nav-link-count;
 
                     a {
                         font-size: 23px;
@@ -275,10 +285,6 @@
                         font-weight: 400;
                         color: white;
                         display: block;
-
-                        &::after {
-                            content: " : " counter(nav-link-count);
-                        }
                     }
 
                     &:hover {
@@ -355,4 +361,58 @@
     }
 }
 
+// End - Sandwich Navigation
+
 // End Mobile Navigation
+
+
+@media (max-width: 430px) {
+    .offcanvas-menu {
+        nav {
+            top: 0;
+
+            >div {
+                margin-left: 42px;
+                margin-top: 24px;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 390px) {
+
+    .offcanvas-menu {
+        input[type="checkbox"] {
+
+            &:checked {
+
+                ~nav {
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                }
+            }
+        }
+
+        nav {
+            top: 10px;
+
+            >div {
+                margin-left: 36px;
+                margin-top: 15px;
+
+                span {
+                    margin-top: 12px;
+                }
+
+                label {
+                    margin-top: -9px;
+                    margin-right: 40px;
+                    // margin-top: 3px;
+                }
+            }
+        }
+    }
+}
