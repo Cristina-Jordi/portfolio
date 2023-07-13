@@ -25,7 +25,6 @@ $green: #50b650;
         height: 60px;
         background-color: #141D2F;
         z-index: 50;
-        // border: 1px solid white;
     }
 
     .qr-code {
@@ -115,7 +114,6 @@ $green: #50b650;
         height: 60px;
         background-color: #141D2F;
         z-index: 50;
-        // border: 1px solid white;
 
         .name-container {
             font-family: 'Allison Script', sans-serif;
@@ -152,7 +150,7 @@ $green: #50b650;
 
     @keyframes hover {
 
-        // Im Menu die Links schwanken nach rechts
+        // transition of the menu from left to right and back
         50% {
             transform: translateX(20px);
         }
@@ -164,7 +162,7 @@ $green: #50b650;
             position: fixed;
             top: 11px;
             right: 30px;
-            width: 40px; // Position des Sandwich Menus
+            width: 40px; // Position of the Sandwich Menu
             height: 40px;
             cursor: pointer;
             transition: 0.3s ease;
@@ -191,7 +189,7 @@ $green: #50b650;
                 background-color: white;
             }
 
-            // Die beiden Striche zu einem Kreuz
+            // Transition of both lines to a cross
             span::before {
                 transform: translateY(-12px);
             }
@@ -202,7 +200,7 @@ $green: #50b650;
         }
 
         nav {
-            // Nach Klick auf Sandwich
+            // After click on Sandwich
             position: fixed;
             top: -26px;
             height: 100vh;
@@ -227,24 +225,6 @@ $green: #50b650;
                 color: $orange;
                 cursor: unset;
 
-                // a {
-                //     font-size: max(30px, 6vw);
-                //     font-weight: 400;
-                //     display: flex;
-                //     align-items: center;
-                //     font-family: "Allison Script", sans-serif;
-                //     // color: white;
-                //     margin-left: 36px;
-                //     margin-top: 27px;
-                //     color: $orange;
-                //     cursor: unset;
-
-                //     i {
-                //         font-size: 4rem;
-                //         background: linear-gradient(120deg, #49a4ed 30%, #3d00a9 110%);
-                //         -webkit-text-fill-color: transparent;
-                //     }
-                // }
 
                 label {
                     width: 30px;
@@ -410,7 +390,6 @@ $green: #50b650;
                 label {
                     margin-top: -9px;
                     margin-right: 40px;
-                    // margin-top: 3px;
                 }
             }
         }

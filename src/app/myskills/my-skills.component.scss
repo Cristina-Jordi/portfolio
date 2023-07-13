@@ -13,7 +13,6 @@ $red: #FF4747;
     justify-content: space-between;
     align-items: flex-start;
     padding-left: 10%;
-    // border: 1px solid white;
 
     // Grid Icons Container
     .skills-icons-container {
@@ -23,7 +22,6 @@ $red: #FF4747;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-row-gap: 50px;
-        // border: 1px solid white;
 
         img {
             width: 80px;
@@ -37,8 +35,6 @@ $red: #FF4747;
                 transform: translateY(-10px);
             }
         }
-
-
     }
 
     // End My Skills Section - Icons Grid
@@ -53,7 +49,6 @@ $red: #FF4747;
         justify-content: flex-start;
         align-items: flex-end;
         margin-right: 10%;
-        // border: 1px solid white;
 
         h2 {
             font-family: 'Poppins', sans-serif;
@@ -223,7 +218,6 @@ $red: #FF4747;
             img {
                 width: 13vw;
             }
-
         }
     }
 }
@@ -275,10 +269,8 @@ $red: #FF4747;
             img {
                 width: 17vw;
             }
-
         }
     }
-
 }
 
 @media (max-width: 390px) {
@@ -303,10 +295,8 @@ $red: #FF4747;
                 width: unset;
                 margin-right: 34%;
 
-
                 .another-btn {
                     margin-top: 340px;
-
                 }
             }
         }
@@ -325,7 +315,6 @@ $red: #FF4747;
             img {
                 width: 17vw;
             }
-
         }
     }
 }

@@ -43,6 +43,8 @@ export class ContactComponent implements OnInit {
         body: fd
       });
 
+    console.log('E-mail sent successfully!');
+
     this.formSubmitted = true;
 
     setTimeout(() => {
@@ -53,7 +55,7 @@ export class ContactComponent implements OnInit {
       this.emailField.nativeElement.value = '';
       messageField.value = '';
 
-      // Zurücksetzen der Border-Stile
+      // Reset Border-Styles
       nameField.classList.remove('valid-field');
       this.emailField.nativeElement.classList.remove('valid-field');
       messageField.classList.remove('valid-field');
@@ -65,26 +67,26 @@ export class ContactComponent implements OnInit {
   }
 
   validateFields() {
-    // Überprüfen der Felder auf Korrektheit und Anwenden des Border-Stils
+    // Check Fields if correct and border style
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
 
-    // Name-Feld validieren
+    // Validate Name-Field
     if (nameField.value.trim() !== '') {
       nameField.classList.add('valid-field');
     } else {
       nameField.classList.remove('valid-field');
     }
 
-    // Email-Feld validieren
+    // Validate Email-Field
     if (this.validateEmail(emailField.value.trim())) {
       emailField.classList.add('valid-field');
     } else {
       emailField.classList.remove('valid-field');
     }
 
-    // Message-Feld validieren
+    // Validate Message-Field
     if (messageField.value.trim() !== '') {
       messageField.classList.add('valid-field');
     } else {
@@ -93,8 +95,6 @@ export class ContactComponent implements OnInit {
   }
 
   validateEmail(email: string): boolean {
-    // Email-Validierung (vereinfachte Überprüfung)
-    // Hier können Sie eine detailliertere Email-Validierung implementieren
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 }

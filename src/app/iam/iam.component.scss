@@ -23,8 +23,6 @@ $red: #FF4747;
     justify-content: flex-start;
     align-items: center;
     margin-top: 95px;
-    // border: 1px solid white;
-
 }
 
 .iam-container {
@@ -38,7 +36,6 @@ $red: #FF4747;
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: scaleY(-1);
-    // border: 1px solid white;
 }
 
 .portrait-container {
@@ -115,8 +112,6 @@ $red: #FF4747;
     img.transition {
         height: 30px;
         object-fit: cover;
-        // margin-right: 30px;
-        // margin-left: 20px;
         cursor: pointer;
         transition: all 300ms ease-in-out;
 
@@ -180,7 +175,6 @@ $red: #FF4747;
     align-items: center;
     justify-content: space-between;
     font-size: 1.2rem;
-    // border: 1px solid white;
 
     .text-scroll-down {
         position: relative;
@@ -189,7 +183,6 @@ $red: #FF4747;
         justify-content: flex-end;
         align-items: center;
         transform: rotate(90deg);
-        // // border: 1px solid white;
     }
 
     .scroll-icon {
@@ -243,7 +236,6 @@ $red: #FF4747;
         display: flex;
         justify-content: center;
         line-height: 4vh;
-        // border: 1px solid white;
 
         .right-space {
             margin-right: 5%;
@@ -290,7 +282,6 @@ $red: #FF4747;
         top: 49%;
     }
 }
-
 
 @media (max-width: 690px) {
 

@@ -121,7 +121,6 @@ $orange: #FA7902;
         position: absolute;
         justify-content: center;
         display: flex;
-        // height: 196px;
         background-color: $bg-color;
         border-top: 4px solid $orange;
         left: 0;
@@ -253,13 +252,6 @@ $orange: #FA7902;
     }
 }
 
-// @media (max-width: 850px) {
-
-//     .footer_container {
-//         margin-bottom: 4vw;
-//     }
-// }
-
 @media (max-width: 430px) {
     .footer_container {
         margin-bottom: unset;
@@ -293,7 +285,6 @@ $orange: #FA7902;
             }
         }
     }
-
 }
 
 @media (max-width: 390px) {

@@ -1,6 +1,6 @@
 $orange: #FA7902;
 $red: #FF4747;
-$green: #50b650;
+$green: #383c38;
 
 // Contact form - formatting
 
@@ -19,7 +19,6 @@ $green: #50b650;
             color: white;
             font-weight: 700;
             font-size: max(20px, 6.3vw); // ca. 90px
-            // line-height: 6vw;
             height: 160px;
             display: flex;
             align-items: flex-end;
@@ -79,7 +78,8 @@ $green: #50b650;
         .thank-you-message {
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
-            font-size: max(12px, 0.9vw);
+            font-size: max(15px, 1.5vw);
+            line-height: 21px;
             color: $red;
         }
     }
@@ -177,7 +177,6 @@ select:-webkit-autofill:focus {
 // Begin To top Button Formatting
 
 .top-btn {
-    // position: fixed;
     position: absolute;
     bottom: -22%;
     right: 4%;
@@ -233,7 +232,7 @@ select:-webkit-autofill:focus {
 
             .text {
                 line-height: 21px;
-                font-size: max(12px, 1.7vw);
+                font-size: 16px;
                 margin-bottom: -30px;
                 width: 90%;
             }
@@ -272,9 +271,9 @@ select:-webkit-autofill:focus {
 
     .background-red-container {
         z-index: -1;
-        top: 71vw; // 557px;
-        width: 45vw; // 434px;
-        height: 63vh; // 550px;
+        top: 71vw;
+        width: 45vw;
+        height: 63vh;
         position: absolute;
         left: 0;
         right: 0;
@@ -282,18 +281,18 @@ select:-webkit-autofill:focus {
     }
 }
 
-@media (min-width: 800px) and (max-width: 950px){
+@media (min-width: 800px) and (max-width: 950px) {
     .contact_container {
-            .background-red-container {
-                top: 90vw;
-    
-                img {
-                    width: 60vw;
-                    height: 47vh;
-                }
+        .background-red-container {
+            top: 90vw;
+
+            img {
+                width: 60vw;
+                height: 47vh;
             }
         }
     }
+}
 
 
 @media (min-width: 600px) and (max-width: 800px) {
@@ -349,7 +348,6 @@ select:-webkit-autofill:focus {
         margin-top: -126px;
 
         .title_contact {
-            // margin-top: -88px;
 
             h2 {
                 font-size: 45px;
@@ -393,7 +391,6 @@ select:-webkit-autofill:focus {
 
         .background-red-container {
             top: 170vw;
-            // overflow: hidden;
 
             img {
                 width: 71vw;
@@ -413,6 +410,47 @@ select:-webkit-autofill:focus {
         top: 53vh;
     }
 
+}
+
+@media (min-width: 600px) and (max-width: 950px) {
+    .contact_container {
+        .text_contact {
+            .thank-you {
+                display: flex;
+                justify-content: center;
+                margin-top: 70%;
+                position: absolute;
+
+                p.thank-you-message {
+                    color: $red;
+                    font-size: max(15px, 2vw);
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 390px) and (max-width: 600px) {
+    .contact_container {
+        .text_contact {
+            .thank-you {
+                display: flex;
+                justify-content: center;
+                margin-top: 100%;
+                position: absolute;
+                z-index: 1000;
+                
+
+                p.thank-you-message {
+                    color: $red;
+                    font-size: max(15px, 2vw);
+                    line-height: 23px;
+                    z-index: 1000;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 390px) {
@@ -468,7 +506,6 @@ select:-webkit-autofill:focus {
             img {
                 width: 80vw;
                 height: 40vh;
-
             }
         }
 
@@ -481,6 +518,4 @@ select:-webkit-autofill:focus {
             top: 441px;
         }
     }
-
-
 }

@@ -31,7 +31,6 @@ $red: #FF4747;
         .container-line-4 {
 
             img.line-4 {
-                // width: 520px;
                 width: 33vw;
                 height: 4px;
             }
@@ -41,7 +40,6 @@ $red: #FF4747;
             display: flex;
             align-items: flex-end;
             height: 180px;
-            //  border: 1px solid white;
 
             p {
                 display: flex;
@@ -84,7 +82,6 @@ $red: #FF4747;
         font-weight: 700;
         margin-bottom: 1.5vw;
         font-size: max(15px, 2.52vw); // ca. 32px
-
     }
 
     .title-grid {
@@ -154,12 +151,9 @@ $red: #FF4747;
 
     .btn-left-portfolio {
         display: flex;
-        // justify-content: space-between;
         justify-content: flex-end;
-        // width: 70%;
         margin-left: 98px;
         margin-right: 0;
-        // gap: 10%;
         gap: 16%;
 
         button {
@@ -446,7 +440,6 @@ $red: #FF4747;
         .portfolio-img {
             img {
                 width: 111%;
-
             }
         }
 
@@ -537,7 +530,6 @@ $red: #FF4747;
         .portfolio-img {
             img {
                 width: 111%;
-
             }
         }
 
