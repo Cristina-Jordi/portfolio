@@ -19,9 +19,8 @@ $green: #50b650;
             color: white;
             font-weight: 700;
             font-size: max(20px, 6.3vw); // ca. 90px
-            line-height: 6vw;
-
-            height: 150px;
+            // line-height: 6vw;
+            height: 160px;
             display: flex;
             align-items: flex-end;
         }
@@ -29,7 +28,7 @@ $green: #50b650;
         .vektor-container-contact {
             position: absolute;
             left: 0;
-            top: 18%;
+            top: 22%;
             z-index: 0;
 
             img {
@@ -51,10 +50,10 @@ $green: #50b650;
             font-family: 'Poppins', sans-serif;
             color: white;
             font-weight: 700;
-            // font-size: 32px;
             font-size: max(20px, 2vw); // ca. 32px
             margin-bottom: -0.5vw;
             line-height: 26px;
+            margin-top: 3vw;
         }
 
         .text {
@@ -90,6 +89,7 @@ $green: #50b650;
         margin-right: 10%;
         display: flex;
         justify-content: flex-end;
+        margin-top: 3vw;
 
         .btn_container {
             display: flex;
@@ -282,157 +282,62 @@ select:-webkit-autofill:focus {
     }
 }
 
-@media (max-width: 850px) {
-
+@media (min-width: 800px) and (max-width: 950px){
     .contact_container {
+            .background-red-container {
+                top: 90vw;
+    
+                img {
+                    width: 60vw;
+                    height: 47vh;
+                }
+            }
+        }
+    }
+
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .contact_container {
+        .background-red-container {
+            top: 91vw;
+
+            img {
+                width: 75vw;
+                height: 65vh;
+            }
+        }
 
         .contact_content_container {
-            margin-bottom: -80%;
-        }
-
-        .background-red-container {
-            z-index: -1;
-            top: 24vw;
-            position: relative;
-            margin-left: -15%;
-            background-size: 500px;
-            width: 100%;
-        }
-    }
-
-    .top-btn {
-        position: relative;
-        left: 45vw;
-    }
-
-}
-
-@media (max-width: 770px) {
-    .contact_container {
-        .background-red-container {
-            z-index: -1;
-            top: 45vw;
-            position: relative;
-            margin-left: -15%;
-            background-size: 500px;
-            width: 100%;
-
-            img {
-                width: 32vw;
-                height: 41vh;
-            }
-        }
-    }
-}
-
-@media (max-width: 740px) {
-    .contact_container {
-        .background-red-container {
-            z-index: -1;
-            top: 60vw;
-            position: relative;
-            margin-left: -15%;
-            background-size: 500px;
-            width: 100%;
-
-            img {
-                width: 32vw;
-                height: 41vh;
-            }
-        }
-    }
-}
-
-@media (max-width: 720px) {
-    .contact_container {
-        .background-red-container {
-            z-index: -1;
-            top: 48vw;
-            position: relative;
-            margin-left: -15%;
-            background-size: 500px;
-            width: 100%;
-
-            img {
-                width: 32vw;
-                height: 41vh;
-            }
-        }
-    }
-}
-
-@media (min-width: 615px) and (max-width: 717px) {
-    .contact_container {
-        .background-red-container {
-            z-index: -1;
-            top: 65vw;
-            position: relative;
-            margin-left: -15%;
-            background-size: 500px;
-            width: 100%;
-
-            img {
-                width: 32vw;
-                height: 41vh;
-            }
-        }
-    }
-}
-
-@media (max-width: 615px) {
-
-    .contact_container {
-        .background-red-container {
-            z-index: -1;
-            top: 65vw;
-            position: relative;
-            margin-left: -15%;
-            background-size: 500px;
-            width: 100%;
-
-            img {
-                width: 32vw;
-                height: 41vh;
-            }
-        }
-    }
-}
-
-@media (max-width: 590px) {
-    .contact_container {
-        margin-bottom: 12px;
-
-        .title_contact {
-            .vektor-container-contact {
-                top: 17%;
-                font-size: max(12px, 2.5vw);
-            }
-        }
-
-        .text_contact {
-            .text {
-                line-height: 21px;
-                font-size: max(12px, 2.5vw);
-            }
-        }
-
-        .background-red-container {
-            z-index: -1;
-            top: 39vw;
-            position: relative;
-            margin-left: -15%;
-            background-size: 500px;
-            width: 100%;
-
-            img {
-                width: 32vw;
-                height: 41vh;
-            }
+            margin-bottom: -44px;
         }
 
         .top-btn {
+            position: absolute;
+            bottom: -18%;
+        }
+    }
+}
+
+@media (min-width: 430px) and (max-width: 600px) {
+    .contact_container {
+
+        .top-btn {
+            right: -44%;
             position: relative;
-            top: 468px;
+            top: 17vh;
+        }
+
+        .background-red-container {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: -19%;
+            margin-top: 65vh;
+
+            img {
+                width: 96vw;
+                height: 39vh;
+            }
         }
     }
 }
@@ -440,15 +345,18 @@ select:-webkit-autofill:focus {
 @media (max-width: 430px) {
 
     .contact_container {
+        margin-bottom: 496px;
+        margin-top: -126px;
+
         .title_contact {
-            margin-top: unset;
+            // margin-top: -88px;
 
             h2 {
                 font-size: 45px;
             }
 
             .vektor-container-contact {
-                top: 14%;
+                top: 41%;
                 height: 53px;
 
                 img {
@@ -484,12 +392,12 @@ select:-webkit-autofill:focus {
         }
 
         .background-red-container {
-            top: 65vw;
-            overflow: hidden;
+            top: 170vw;
+            // overflow: hidden;
 
             img {
-                width: 80vw;
-                height: 40vh;
+                width: 71vw;
+                height: 41vh;
 
             }
         }
@@ -500,8 +408,9 @@ select:-webkit-autofill:focus {
     }
 
     .top-btn {
-        left: 160px;
-        top: 478px;
+        right: -44%;
+        position: relative;
+        top: 53vh;
     }
 
 }
@@ -566,10 +475,12 @@ select:-webkit-autofill:focus {
         .contact_content_container {
             margin-bottom: -129%;
         }
+
+        .top-btn {
+            left: 132px;
+            top: 441px;
+        }
     }
 
-    .top-btn {
-        left: 132px;
-        top: 486px;
-    }
+
 }

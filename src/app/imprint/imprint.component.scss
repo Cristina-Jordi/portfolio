@@ -2,7 +2,8 @@
     margin-top: 100px; // 8%
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 86px; // -11%;
+    margin-bottom: 67px; // -11%;
+    // margin-bottom: 86px; // -11%;
 
     h2 {
         font-family: 'Poppins', sans-serif;
@@ -72,6 +73,7 @@
 @media (max-width: 390px) {
 
     .imprint-container {
-        margin-bottom: 41px;
+        margin-bottom: 0px;
+        margin-top: 24%;
     }
 }

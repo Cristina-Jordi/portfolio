@@ -67,7 +67,7 @@ $red: #FF4747;
             font-weight: 400;
             text-align: center;
             line-height: 19px;
-            font-size: max(12px, 1.1vw); // ca. 16px
+            font-size: 16px;
             width: 100%;
         }
     }
@@ -224,7 +224,7 @@ $red: #FF4747;
 @media (max-width: 950px) {
 
     .portfolio-container-flex {
-        margin-top: 464px;
+        margin-top: 186px;
         display: flex;
         justify-content: flex-end;
         height: 160px;
@@ -267,7 +267,7 @@ $red: #FF4747;
         justify-content: center;
 
         p {
-            font-size: max(12px, 1.9vw); // ca. 16px
+            font-size: 16px;
             line-height: 75px;
         }
     }
@@ -302,13 +302,6 @@ $red: #FF4747;
             }
         }
 
-        // .flip-horizontally {
-
-        //     img {
-        //         transform: scaleX(-1);
-        //     }
-        // }
-
         .portfolio-text {
             display: flex;
             flex-direction: column;
@@ -319,7 +312,7 @@ $red: #FF4747;
                 color: $red;
                 font-weight: 700;
                 margin-bottom: 20px;
-                font-size: max(15px, 3.2vw); // ca. 32px
+                font-size: 32px;
             }
 
             .title-portofolio,
@@ -328,7 +321,7 @@ $red: #FF4747;
                 color: $orange;
                 font-weight: 400;
                 margin-bottom: 20px;
-                font-size: max(13px, 2.45vw); // ca. 23px
+                font-size: 23px;
             }
 
             .text-portfolio {
@@ -336,9 +329,8 @@ $red: #FF4747;
                 color: white;
                 font-weight: 400;
                 text-align: center;
-                // margin-bottom: 19px;
                 line-height: 21px;
-                font-size: max(12px, 1.7vw); // ca. 16px
+                font-size: 16px;
             }
 
             .btn-portfolio {
@@ -383,9 +375,15 @@ $red: #FF4747;
             }
         }
     }
+}
 
-    // End Grid System formatting
+// End Grid System formatting
 
+@media (min-width: 590px) and (max-width: 950px) {
+
+    .portfolio-container-flex {
+        margin-top: 10vh;
+    }
 }
 
 @media (max-width: 590px) {
@@ -410,30 +408,34 @@ $red: #FF4747;
 
             h3 {
                 line-height: 21px;
-                font-size: max(12px, 4vw);
-                margin-bottom: -1%;
+                font-size: 32px;
+                margin-bottom: 2%;
             }
 
             .text-portfolio {
                 line-height: 21px;
-                font-size: max(12px, 2.5vw);
+                font-size: 16px;
             }
 
             p {
-                line-height: 21px;
-                font-size: max(12px, 3vw);
+                line-height: 25px;
+                font-size: 23px;
                 margin-top: 20px;
                 margin-bottom: -1%;
+                text-align: center;
             }
         }
     }
 
     .portfolio-container-text {
         p {
-            font-size: max(12px, 2.5vw);
+            font-size: 16px;
             line-height: 19px;
             margin-bottom: -10%;
             margin-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
         }
     }
 
